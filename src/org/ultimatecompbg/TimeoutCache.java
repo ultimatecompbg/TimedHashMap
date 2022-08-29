@@ -22,7 +22,13 @@ public class TimeoutCache {
         cacheMap.put(key, new Timestamp(System.currentTimeMillis()));
     }
     public Timestamp get(String key){
-        return cacheMap.get(key);
+        try{
+            return cacheMap.get(key);
+        }finally{
+            cacheMap.put(key, new Timestamp(System.currentTimeMillis()));
+        }
+
+
     }
     public void remove(String key){
         cacheMap.remove(key);

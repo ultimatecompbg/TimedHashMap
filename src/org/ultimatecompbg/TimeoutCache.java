@@ -4,9 +4,9 @@ import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
+//DA: Add come comments
 public class TimeoutCache {
-    private HashMap<String, Timestamp> cacheMap = new HashMap<>();
+    private HashMap<String, Timestamp> cacheMap = new HashMap<>(); //DA: I want to put objects in the hashmap, not timestamp
     public void checkAll(int timeOut){
         Iterator<Map.Entry<String, Timestamp>> iterator = cacheMap.entrySet().iterator();
         while(iterator.hasNext()) {

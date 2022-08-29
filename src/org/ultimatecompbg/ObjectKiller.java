@@ -1,6 +1,6 @@
 package org.ultimatecompbg;
 
-public class ObjectKiller extends Thread{
+public class ObjectKiller extends Thread{ // Use Runnable
     private final TimeoutCache cacheMap;
     public ObjectKiller(TimeoutCache newCacheMap){
         cacheMap = newCacheMap;

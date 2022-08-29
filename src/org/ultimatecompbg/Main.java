@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         TimeoutCache newCacheMap = new TimeoutCache();
-        ObjectKiller objectKiller = new ObjectKiller(newCacheMap);
+        ObjectKiller objectKiller = new ObjectKiller(newCacheMap); // Put this inside the TimeoutCache
         System.out.println("Object timeout(in milliseconds):");
         Scanner timeOut = new Scanner(System.in);
         int timeOutTime = timeOut.nextInt();
